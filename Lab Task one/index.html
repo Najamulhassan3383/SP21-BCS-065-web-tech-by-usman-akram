@@ -3,287 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-        
-        Najam ul Hassan
-
-    </title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        color: #cccccc;
-        background-image: linear-gradient(
-          to left top,
-          #37474f,
-          #41636e,
-          #48818c,
-          #50a0a7,
-          #5bc0be
-        );
-      }
-
-      .container {
-        max-width: 1200px;
-
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px 20px;
-        background-color: #008080;
-        border-radius: 10px;
-        margin: 20px auto;
-      }
-
-      .header .right {
-        flex: 1;
-      }
-
-      .header .right .name {
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .header .right .about-me {
-        font-size: 20px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-
-      .header .absolute-position {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-
-      .header .absolute-position img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .main {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px 10px;
-      }
-
-      .main .left {
-        flex: 1;
-      }
-
-      .main .left .about,
-      .main .left .contact {
-        margin-bottom: 20px;
-      }
-
-      .main .left .about h2,
-      .main .left .contact h2 {
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .main .left .about p,
-      .main .left .contact p {
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-
-      .main .left .contact p a {
-        color: #333;
-        text-decoration: none;
-      }
-
-      .main .right {
-        flex: 1;
-        margin-right: 10px;
-      }
-
-      .main .right .education,
-      .main .right .skills,
-      .main .right .languages {
-        margin-bottom: 20px;
-      }
-
-      .main .right .education h2,
-      .main .right .skills h2,
-      .main .right .languages h2 {
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .main .right .education ul,
-      .main .right .skills ul,
-      .main .right .languages ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      .main .right .education ul li,
-      .main .right .skills ul li,
-      .main .right .languages ul li {
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-
-      .footer {
-        text-align: center;
-        padding: 20px 0;
-        background-color: #008080;
-        border-radius: 10px;
-        margin: 20px auto;
-      }
-
-      .footer p {
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-      .button{
-        background-color: #5bc0be;
-        border-radius: 10px;
-        padding: 10px 20px;
-        border: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 400;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-      }
-        .button:hover{
-            background-color: #fff;
-            color: #008080;
-        }
-
-      @media (max-width: 768px) {
-        .header {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .header .right {
-          text-align: center;
-        }
-
-        .header .absolute-position {
-          margin-top: 20px;
-        }
-
-        .main {
-          flex-direction: column;
-        }
-
-        .main .left,
-        .main .right {
-          margin-bottom: 20px;
-        }
-      }
-    </style>
+    <title>Authentication Page</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- make a cv and add classes to it and make it responsive? -->
-    <div class="container">
-      <div class="header">
-        <div class="right">
-          <h2 class="name">Najam ul Hassan</h2>
-          <p class="about-me">Web Developer and Machine Learning Engineer</p>
-          <button class="button">Hire Me!</button>
-        </div>
-        <div class="absolute-position">
-          <img src="./WhatsApp Image 2023-06-30 at 20.25.10.jpeg" alt="Image" />
-        </div>
-      </div>
-      <div class="main">
-        <div class="left">
-          <div class="about">
-            <h2>About Me</h2>
-            <p>
-              I'm Najam ul Hassan, a computer science student with a passion for web development. I thrive on crafting beautiful and functional websites using tools like Visual Studio. Whether it's coding, designing, or optimizing user experiences, I'm enthusiastic about every aspect of web development.
-            </p>
-          </div>
-          <div class="contact">
-            <h2>Contact Me</h2>
-            <p><strong>Phone:</strong> 0300-1234567</p>
-            <p>
-              <strong>Email:</strong>
-              najmulhassan721@gmail.com
-              </a>
-            </p>
-            <p>
-              <strong>Address:</strong> H#199-A, Venus Housing Scheme, Lahore
-            </p>
-          </div>
-        </div>
-        <div class="right">
-          <div class="education">
-            <h2>Education</h2>
-            <ul>
-              <li>
-                <h3>Matric</h3>
-                <p>2010</p>
-                <p>Qazi Grammer Boys High School</p>
-              </li>
-              <li>
-                <h3>Intermediate</h3>
-                <p>2012</p>
-                <p>Garrision Cadet College Kohat</p>
-              </li>
-              <li>
-                <h3>Graduation</h3>
-                <p>2016</p>
-                <p>COMSATS University</p>
-              </li>
-            </ul>
-          </div>
-          <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>c++</li>
-              <li>Material UI</li>
-            </ul>
-          </div>
-          <div class="languages">
-            <h2>Languages</h2>
-            <ul>
-              <li>English</li>
-              <li>Urdu</li>
-              <li>Punjabi</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <p>Copy Right &copy; 2020</p>
+
+  <body class="bg-gray-200 flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded shadow-lg">
+      <h1 class="text-2xl font-semibold mb-8 text-center">
+        Welcome! Choose an option:
+      </h1>
+      <div class="flex justify-around">
+        <button
+          id="signInBtn"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Sign In
+        </button>
+        <button
+          id="signUpBtn"
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Sign Up
+        </button>
       </div>
     </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Your custom JavaScript for form validation goes here -->
+    <script src="script.js"></script>
   </body>
 </html>
