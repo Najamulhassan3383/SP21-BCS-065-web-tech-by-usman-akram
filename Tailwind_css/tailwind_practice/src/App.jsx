@@ -1,3 +1,12 @@
+import Hero from "./projects/Clipboard/Hero";
+import Snippets from "./projects/Clipboard/Snippets";
+import Features from "./projects/Clipboard/Features";
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Hero />
+      <Snippets />
+      <Features />
+    </>
+  );
 }
