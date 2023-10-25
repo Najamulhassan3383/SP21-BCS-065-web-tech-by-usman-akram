@@ -16,7 +16,7 @@ function Hero() {
         <button className="bg-strongCyan text-white rounded-lg px-8 py-4 text-xl font-bold hover:bg-lightBlue">
           Download for iOS
         </button>
-        <button className="bg-lightBlue text-strongCyan rounded-lg px-8 py-4 text-xl font-bold hover:bg-strongCyan">
+        <button className="bg-lightBlue text-white rounded-lg px-8 py-4 text-xl font-bold hover:bg-strongCyan">
           Download for Mac
         </button>
       </div>
