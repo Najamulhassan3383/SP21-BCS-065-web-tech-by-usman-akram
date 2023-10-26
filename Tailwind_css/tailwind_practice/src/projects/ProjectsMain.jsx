@@ -8,7 +8,7 @@ import Footer from "./Clipboard/Footer";
 
 function ProjectsMain() {
   return (
-    <>
+    <div className="clipboard">
       <Hero />
       <Snippets />
       <Features />
@@ -16,7 +16,7 @@ function ProjectsMain() {
       <SuperChargeSection />
       <References />
       <Footer />
-    </>
+    </div>
   );
 }
 
