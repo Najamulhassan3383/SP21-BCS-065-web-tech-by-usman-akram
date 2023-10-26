@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo.svg";
+import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 function Footer() {
   return (
@@ -42,6 +43,17 @@ function Footer() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div className="mx-2">
+              <BsFacebook className="text-3xl hover:fill-lightBlue" />
+            </div>
+            <div className="mx-2">
+              <BsTwitter className="text-3xl hover:fill-lightBlue" />
+            </div>
+            <div className="mx-2 w-8 h-8">
+              <BsInstagram className="text-3xl hover:fill-lightBlue" />
             </div>
           </div>
         </div>

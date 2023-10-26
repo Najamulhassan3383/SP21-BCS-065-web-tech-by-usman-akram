@@ -14,6 +14,10 @@ export default {
         lightBlue: "hsl(233, 100%, 69%)",
         darkGrayishBlue: "hsl(210, 10%, 33%)",
         grayishBlue: "hsl(201, 11%, 66%)",
+        white: "hsl(0, 0%, 100%)",
+        Black: "hsl(0, 0%, 0%)",
+        DarkGray: "hsl(0, 0%, 55%)",
+        VeryDarkGray: "hsl(0, 0%, 41%)",
       },
       fontFamily: {
         sans: ["Bai Jamjuree", "sans-serif"],
