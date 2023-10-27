@@ -1,4 +1,3 @@
-import React from "react";
 import deepEarthDesktop from "./loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg";
 import deepEarthMobile from "./loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg";
 import nightArcadeDesktop from "./loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg";
@@ -91,6 +90,9 @@ function Creations() {
           </h5>
         </div>
       </div>
+      <button className="block px-10 w-56 mx-auto my-4 py-2 my-0 text-black tracking-widest  uppercase bg-white text-black font-bold border-2 border-black  md:hidden hover:bg-black hover:text-white">
+        See All
+      </button>
     </div>
   );
 }
