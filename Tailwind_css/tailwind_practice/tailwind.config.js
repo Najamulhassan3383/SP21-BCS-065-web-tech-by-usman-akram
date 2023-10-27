@@ -22,6 +22,9 @@ export default {
       fontFamily: {
         sans: ["Bai Jamjuree", "sans-serif"],
       },
+      letterSpacing: {
+        widest: ".25em",
+      },
     },
   },
   plugins: [],
