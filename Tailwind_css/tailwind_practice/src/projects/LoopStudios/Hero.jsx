@@ -1,7 +1,8 @@
 import logo from "./loopstudios-landing-page-main/images/logo.svg";
+
 function Hero() {
   return (
-    <div className="max-w-6xl container mx-auto px-6 py-12 md:px-6">
+    <div className="max-w-6xl container mx-auto px-6  pt-12 md:px-6 md:pb-12">
       {/* navbar container */}
       <div className="flex items-center font-bold justify-between text-white">
         <img src={logo} alt="logo" className="cursor-pointer" />
