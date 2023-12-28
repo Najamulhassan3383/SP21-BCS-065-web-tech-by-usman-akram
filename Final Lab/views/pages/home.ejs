@@ -2,16 +2,44 @@
 <html lang="en">
   <head>
     <%- include('../partials/head'); %>
+    <style>
+      .user-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .user-list li {
+        margin: 1em 0;
+        padding: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .user-list li h2 {
+        margin: 0 0 1em;
+      }
+      .user-list li .btn {
+        margin-right: 1em;
+      }
+    </style>
   </head>
   <body class="container">
     <main>
       <div class="jumbotron h-full">
-        <h1>Welcome to Todo list app</h1>
-        <p>Manage your tasks with ease</p>
-
-        <a href="/logout" class="btn btn-primary btn-lg">Log out</a>
-        <a href="/update" class="btn btn-success btn-lg">Update</a>
+        <h1>User Crud Operations</h1>
+        <ul class="user-list">
+          <% users.forEach(function(user) { %>
+          <li>
+            <h2><%= user.name %></h2>
+            <a href="/update/<%= user._id %>" class="btn btn-success btn-lg"
+              >Update</a
+            >
+            <a href="/delete/<%= user._id %>" class="btn btn-danger btn-lg"
+              >Delete</a
+            >
+          </li>
+          <% }); %>
+        </ul>
       </div>
+      <a href="/add" class="btn btn-success btn-lg">Add user</a>
     </main>
 
     <footer><%- include('../partials/footer'); %></footer>

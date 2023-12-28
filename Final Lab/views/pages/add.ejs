@@ -7,8 +7,9 @@
   <body class="container">
     <div class="container">
       <div class="form_area">
-        <p class="title"><%= user.name %></p>
-        <form method="post" action="/update/<%= user._id %>">
+        <p class="title">Add user</p>
+        <form method="post" action="/add">
+          <!-- Replace "/register" with your actual endpoint -->
           <div class="form_group">
             <label class="sub_title" for="name">Name</label>
             <input
@@ -16,7 +17,6 @@
               class="form_style"
               type="text"
               name="name"
-              value="<%= user.name %>"
             />
           </div>
           <div class="form_group">
@@ -27,7 +27,6 @@
               class="form_style"
               type="email"
               name="email"
-              value="<%= user.email %>"
             />
           </div>
           <div class="form_group">
@@ -38,11 +37,10 @@
               class="form_style"
               type="password"
               name="password"
-              value="<%= user.password %>"
             />
           </div>
 
-          <button class="btn" type="submit">Update</button>
+          <button class="btn" type="submit">ADD</button>
         </form>
       </div>
     </div>
