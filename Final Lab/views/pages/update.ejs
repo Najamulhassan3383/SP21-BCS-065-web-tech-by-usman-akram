@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/stylesheet/register.css" />
+  </head>
+  <body class="container">
+    <div class="container">
+      <div class="form_area">
+        <p class="title">SIGN UP</p>
+        <form method="put" action="/update">
+          <!-- Replace "/register" with your actual endpoint -->
+          <div class="form_group">
+            <label class="sub_title" for="name">Name</label>
+            <input
+              placeholder="Enter your full name"
+              class="form_style"
+              type="text"
+              name="name"
+            />
+          </div>
+          <div class="form_group">
+            <label class="sub_title" for="email">Email</label>
+            <input
+              placeholder="Enter your email"
+              id="email"
+              class="form_style"
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="form_group">
+            <label class="sub_title" for="password">Password</label>
+            <input
+              placeholder="Enter your password"
+              id="password"
+              class="form_style"
+              type="password"
+              name="password"
+            />
+          </div>
+
+          <button class="btn" type="submit">update</button>
+        </form>
+      </div>
+    </div>
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

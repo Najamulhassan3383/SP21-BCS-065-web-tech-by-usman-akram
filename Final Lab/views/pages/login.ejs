@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/stylesheet/login.css" />
+  </head>
+  <body class="container">
+    <form class="form" method="post" action="/login">
+      <div class="title">Welcome,<br /><span>sign up to continue</span></div>
+      <input class="input" name="email" placeholder="Email" type="email" />
+      <input
+        class="input"
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+      <a class="forgot" href="/register">New?</a>
+      <button class="button-confirm" type="submit">Let`s go →</button>
+    </form>
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
